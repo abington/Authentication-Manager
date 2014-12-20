@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Interface chippyash\Authentication\Manager\ManagerInterface | Chippyash Authentication Manager Library API</title>
+
+	<link rel="stylesheet" href="resources/style.css?3901564645">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-chippyash.html">chippyash<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-chippyash.Authentication.html">Authentication<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-chippyash.Authentication.Manager.html">Manager<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-chippyash.Authentication.Manager.Digest.html">Digest</a>
+						</li>
+				<li class="main"><a href="namespace-chippyash.Authentication.Manager.Encoder.html">Encoder</a>
+						</li>
+				<li class="main"><a href="namespace-chippyash.Authentication.Manager.Exceptions.html">Exceptions</a>
+						</li>
+				<li class="main"><a href="namespace-chippyash.Authentication.Manager.Traits.html">Traits</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-chippyash.Authentication.Manager.DigestManager.html">DigestManager</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-chippyash.Authentication.Manager.ManagerInterface.html">ManagerInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-chippyash.Authentication.Manager.html" title="Summary of chippyash\Authentication\Manager"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface ManagerInterface</h1>
+
+
+	<div class="description">
+	
+<p>Interface for an authentication manager Basic CRUD functionality for managing
+authentication identities within a target auth paradigm</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-chippyash.Authentication.Manager.DigestManager.html">chippyash\Authentication\Manager\DigestManager</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-chippyash.html">chippyash</a>\<a href="namespace-chippyash.Authentication.html">Authentication</a>\<a href="namespace-chippyash.Authentication.Manager.html">Manager</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-chippyash.Authentication.Manager.ManagerInterface.html#12-66" title="Go to source code">Authentication/Manager/ManagerInterface.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-chippyash.Authentication.Manager.ManagerInterface.html#20-28" title="Go to source code">create</a>( <span>chippyash\Type\String\StringType <var>$uid</var></span>, <span>chippyash\Type\String\StringType <var>$pwd</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new identity in the target system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new identity in the target system</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd></dd>
+					<dt><var>$pwd</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if created else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="read" id="_read">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_read">#</a>
+		<code><a href="source-class-chippyash.Authentication.Manager.ManagerInterface.html#30-37" title="Go to source code">read</a>( <span>chippyash\Type\String\StringType <var>$uid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return raw record from target system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return raw record from target system</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Dependent on target system<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-chippyash.Authentication.Manager.ManagerInterface.html#39-47" title="Go to source code">update</a>( <span>chippyash\Type\String\StringType <var>$uid</var></span>, <span>chippyash\Type\String\StringType <var>$pwd</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update the password for the identity given the uid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update the password for the identity given the uid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd></dd>
+					<dt><var>$pwd</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if updated else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-chippyash.Authentication.Manager.ManagerInterface.html#49-56" title="Go to source code">delete</a>( <span>chippyash\Type\String\StringType <var>$uid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Delete the identity given the uid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete the identity given the uid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if deleted else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="has" id="_has">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_has">#</a>
+		<code><a href="source-class-chippyash.Authentication.Manager.ManagerInterface.html#58-65" title="Go to source code">has</a>( <span>chippyash\Type\String\StringType <var>$uid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Does digest have identity specified by uid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Does digest have identity specified by uid</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if entry exists else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Chippyash Authentication Manager Library API API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?1535870329"></script>
+<script src="elementlist.js?2031361815"></script>
+</body>
+</html>
