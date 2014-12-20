@@ -2,3 +2,5 @@ nbproject*
 vendor*
 composer.lock
 .directory
+apigen.neon
+docs/apigen
