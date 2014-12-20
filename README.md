@@ -2,8 +2,8 @@
 
 ## Quality Assurance
 
-[![Build Status](https://travis-ci.org/chippyash/Strong-Type.svg?branch=master)](https://travis-ci.org/chippyash/Strong-Type)
-[![Coverage Status](https://coveralls.io/repos/chippyash/Strong-Type/badge.png)](https://coveralls.io/r/chippyash/Strong-Type)
+[![Build Status](https://travis-ci.org/chippyash/Authentication-Manager.svg?branch=master)](https://travis-ci.org/chippyash/Authentication-Manager)
+[![Coverage Status](https://img.shields.io/coveralls/chippyash/Authentication-Manager.svg)](https://coveralls.io/r/chippyash/Authentication-Manager)
 
 ## What?
 
