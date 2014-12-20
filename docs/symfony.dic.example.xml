@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Example for setting up Digest Manager via Symfony Dependency Injection
+-->
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <parameters>
+        <parameter id="digest.realm">my-realm</parameter>
+        <parameter id="digest.file">/var/www/public/.htdigest</parameter>
+    </parameters>
+    
+    <services>
+        <service id="digest.realm.name"
+                 class="chippyash\Type\String\StringType"
+                 public="false">
+            <argument>%digest.realm%</argument>
+        </service>
+        <service id="digest.realm.file"
+                 class="chippyash\Type\String\StringType"
+                 public="false">
+            <argument>%digest.file%</argument>
+        </service>
+        <service id="digest.encoder"
+                 class="chippyash\Authentication\Manager\Encoder\BasicEncoder"
+                 public="false">
+            <call method="setRealm">
+                <argument type="service" id="digest.realm.name"/>
+            </call>
+        </service>
+        <service id="digest.collection"
+                 class="chippyash\Authentication\Manager\Digest\BasicDigestCollection"
+                 public="false">
+            <argument type="service" id="digest.encoder"/>
+            <argument type="service" id="digest.realm.file"/>
+            <call method="setRealm">
+                <argument type="service" id="digest.realm.name"/>
+            </call>
+        </service>
+        
+        <service id="digest.manager"
+                 class="chippyash\Authentication\Manager\DigestManager">
+            <argument type="service" id="digest.collection"/>
+        </service>
+    </services>
+</container>
