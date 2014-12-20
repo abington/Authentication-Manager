@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/chippyash/Authentication-Manager.svg?branch=master)](https://travis-ci.org/chippyash/Authentication-Manager)
 [![Coverage Status](https://img.shields.io/coveralls/chippyash/Authentication-Manager.svg)](https://coveralls.io/r/chippyash/Authentication-Manager)
 
+Certified for PHP 5.5+
+
 ## What?
 
 Provides base for creating managers that manage identity entries in some back
