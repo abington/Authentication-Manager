@@ -115,3 +115,8 @@ Check out the other packages at [my blog site](http://the-matrix.github.io/packa
 V0...  pre releases
 
 V1.0.0 Initial version tagged
+
+V1.0.1 Amends for CI
+
+V1.0.2 Typos in dic example
+
