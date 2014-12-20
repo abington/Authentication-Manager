@@ -5,8 +5,8 @@ Example for setting up Digest Manager via Symfony Dependency Injection
 <container xmlns="http://symfony.com/schema/dic/services"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <parameters>
-        <parameter id="digest.realm">my-realm</parameter>
-        <parameter id="digest.file">/var/www/public/.htdigest</parameter>
+        <parameter key="digest.realm">my-realm</parameter>
+        <parameter key="digest.file">/var/www/public/.htdigest</parameter>
     </parameters>
     
     <services>
