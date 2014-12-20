@@ -46,6 +46,7 @@ class DigestManager implements ManagerInterface
     public function __construct(DigestCollectionInterface $collection)
     {
         $this->collection = $collection;
+        $this->init();
     }
     
     /**
@@ -146,5 +147,16 @@ class DigestManager implements ManagerInterface
         }
         
         return true;
+    }
+    
+    
+    /**
+     * Initialise the manager from source
+     * @return \chippyash\Authentication\Manager\DigestManager
+     */
+    public function init()
+    {
+        $this->collection->read();
+        return $this;
     }
 }

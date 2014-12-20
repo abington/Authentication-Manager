@@ -120,3 +120,4 @@ V1.0.1 Amends for CI
 
 V1.0.2 Typos in dic example
 
+V1.0.3 Self initialise the manager
