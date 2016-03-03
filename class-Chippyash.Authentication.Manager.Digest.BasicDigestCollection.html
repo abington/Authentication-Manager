@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Chippyash\Authentication\Manager\Digest\BasicDigestCollection | Chippyash Authentication Manager Library API</title>
+
+	<link rel="stylesheet" href="resources/style.css?3901564645">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Chippyash.html">Chippyash<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Chippyash.Authentication.html">Authentication<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-Chippyash.Authentication.Manager.html">Manager<span></span></a>
+						<ul>
+				<li class="active main"><a href="namespace-Chippyash.Authentication.Manager.Digest.html">Digest</a>
+						</li>
+				<li class="main"><a href="namespace-Chippyash.Authentication.Manager.Encoder.html">Encoder</a>
+						</li>
+				<li class="main"><a href="namespace-Chippyash.Authentication.Manager.Exceptions.html">Exceptions</a>
+						</li>
+				<li class="main"><a href="namespace-Chippyash.Authentication.Manager.Traits.html">Traits</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html">AbstractDigestCollection</a></li>
+				<li class="active"><a href="class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html">BasicDigestCollection</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Chippyash.Authentication.Manager.Digest.DigestCollectionInterface.html">DigestCollectionInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Chippyash.Authentication.Manager.Digest.html" title="Summary of Chippyash\Authentication\Manager\Digest"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class BasicDigestCollection</h1>
+
+
+	<div class="description">
+	
+<p>A collection of Basic Digests</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html"><span>Chippyash\Authentication\Manager\Digest\AbstractDigestCollection</span></a>
+			
+			 implements 
+				<a href="class-Chippyash.Authentication.Manager.Digest.DigestCollectionInterface.html"><span>Chippyash\Authentication\Manager\Digest\DigestCollectionInterface</span></a>, 
+			
+<span>Countable</span>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Chippyash\Authentication\Manager\Digest\BasicDigestCollection</span></b>			
+			
+			 uses 
+				<a href="class-Chippyash.Authentication.Manager.Traits.RealmHandler.html"><span>Chippyash\Authentication\Manager\Traits\RealmHandler</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Chippyash.html">Chippyash</a>\<a href="namespace-Chippyash.Authentication.html">Authentication</a>\<a href="namespace-Chippyash.Authentication.Manager.html">Manager</a>\<a href="namespace-Chippyash.Authentication.Manager.Digest.html">Digest</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#18-164" title="Go to source code">Authentication/Manager/Digest/BasicDigestCollection.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#34-45" title="Go to source code">__construct</a>( <span><code><a href="class-Chippyash.Authentication.Manager.Encoder.DigestEncoderInterface.html">Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface</a></code> <var>$encoder</var></span>, <span>Chippyash\Type\String\StringType <var>$fileName</var></span>, <span>array <var>$digests</var> = []</span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$encoder</var></dt>
+					<dd></dd>
+					<dt><var>$fileName</var></dt>
+					<dd></dd>
+					<dt><var>$digests</var></dt>
+					<dd>Digests to add to collection</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#___construct">Chippyash\Authentication\Manager\Digest\AbstractDigestCollection::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findByUid" id="_findByUid">
+
+		<td class="attributes"><code>
+			 public 
+			Chippyash\Type\Number\IntType|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findByUid">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#47-70" title="Go to source code">findByUid</a>( <span>Chippyash\Type\String\StringType <var>$uid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return index into collection for a digest given its uid Side effect: will
+rewind collection to start</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return index into collection for a digest given its uid Side effect: will
+rewind collection to start</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd>user id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Chippyash\Type\Number\IntType|false</code><br>IntType|false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="read" id="_read">
+
+		<td class="attributes"><code>
+			 public 
+			Chippyash\Type\BoolType
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_read">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#72-95" title="Go to source code">read</a>( )</code>
+
+		<div class="description short">
+			
+<p>Read the digest into the collection from file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Read the digest into the collection from file</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Chippyash\Type\BoolType</code><br>true on success else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+			Chippyash\Type\BoolType
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#97-114" title="Go to source code">write</a>( )</code>
+
+		<div class="description short">
+			
+<p>Write the collection to file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Write the collection to file</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Chippyash\Type\BoolType</code><br>true on success else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+			Chippyash\Type\BoolType
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#116-136" title="Go to source code">add</a>( <span>Chippyash\Type\String\StringType <var>$uid</var></span>, <span>Chippyash\Type\String\StringType <var>$pwd</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a digest line to the collection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a digest line to the collection</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uid</var></dt>
+					<dd>user id</dd>
+					<dt><var>$pwd</var></dt>
+					<dd>password</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Chippyash\Type\BoolType</code><br>true on success else false<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="asString" id="_asString">
+
+		<td class="attributes"><code>
+			 public 
+			Chippyash\Type\String\StringType
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_asString">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#138-153" title="Go to source code">asString</a>( <span>Chippyash\Type\Number\IntType <var>$index</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the collection item as a raw digest string</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the collection item as a raw digest string</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$index</var></dt>
+					<dd>Index into collection</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Chippyash\Type\String\StringType</code><br>StringType<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Chippyash.Authentication.Manager.Exceptions.AuthManagerException.html">Chippyash\Authentication\Manager\Exceptions\AuthManagerException</a></code></code><br>AuthManagerException<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="raw" id="_raw">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_raw">#</a>
+		<code><a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#155-163" title="Go to source code">raw</a>( <span>array <var>$digest</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert internal representation to external representation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert internal representation to external representation</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$digest</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#methods">Chippyash\Authentication\Manager\Digest\AbstractDigestCollection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#_count">count()</a>, 
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#_del">del()</a>, 
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#_get">get()</a>, 
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#_setEncoder">setEncoder()</a>, 
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#_setWriteOptions">setWriteOptions()</a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-Chippyash.Authentication.Manager.Traits.RealmHandler.html#methods">Chippyash\Authentication\Manager\Traits\RealmHandler</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Chippyash.Authentication.Manager.Traits.RealmHandler.html#_realm">()</a>, 
+			<a href="class-Chippyash.Authentication.Manager.Traits.RealmHandler.html#_setRealm">()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="SEP_DIGEST" id="SEP_DIGEST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#25" title="Go to source code"><b>SEP_DIGEST</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#SEP_DIGEST" class="anchor">#</a><code><span class="php-quote">':'</span></code></div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#constants">Chippyash\Authentication\Manager\Digest\AbstractDigestCollection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#ERR_NO_DIGEST_TPL"><b>ERR_NO_DIGEST_TPL</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="encoder" id="$encoder">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Chippyash.Authentication.Manager.Encoder.DigestEncoderInterface.html">Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html#28-32" title="Go to source code"><var>$encoder</var></a>
+
+			<div class="description short">
+				
+<p>Digest encoder</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Digest encoder</p>
+
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#$encoder" class="anchor">#</a><code></code></div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#properties">Chippyash\Authentication\Manager\Digest\AbstractDigestCollection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#$collection"><var>$collection</var></a>, 
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#$fileName"><var>$fileName</var></a>, 
+			<a href="class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html#$writeOptions"><var>$writeOptions</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Properties used from <a href="class-Chippyash.Authentication.Manager.Traits.RealmHandler.html#properties">Chippyash\Authentication\Manager\Traits\RealmHandler</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Chippyash.Authentication.Manager.Traits.RealmHandler.html#$realm"><var>$realm</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Chippyash Authentication Manager Library API API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?4155007459"></script>
+<script src="elementlist.js?3039470275"></script>
+</body>
+</html>

@@ -4,53 +4,53 @@
 	<loc>http://chippyash.github.io/Authentication-Manager/index.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.Authentication.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.Authentication.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.Authentication.Manager.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.Authentication.Manager.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.Authentication.Manager.Digest.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.Authentication.Manager.Digest.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.Authentication.Manager.Encoder.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.Authentication.Manager.Encoder.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.Authentication.Manager.Exceptions.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.Authentication.Manager.Exceptions.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/namespace-chippyash.Authentication.Manager.Traits.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/namespace-Chippyash.Authentication.Manager.Traits.html</loc>
 </url>
 
 
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Digest.AbstractDigestCollection.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Digest.BasicDigestCollection.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Digest.BasicDigestCollection.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.DigestManager.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.DigestManager.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Encoder.BasicEncoder.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Encoder.BasicEncoder.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Digest.DigestCollectionInterface.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Digest.DigestCollectionInterface.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Encoder.DigestEncoderInterface.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Encoder.DigestEncoderInterface.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.ManagerInterface.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.ManagerInterface.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Traits.RealmHandler.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Traits.RealmHandler.html</loc>
 </url>
 <url>
-	<loc>http://chippyash.github.io/Authentication-Manager/class-chippyash.Authentication.Manager.Exceptions.AuthManagerException.html</loc>
+	<loc>http://chippyash.github.io/Authentication-Manager/class-Chippyash.Authentication.Manager.Exceptions.AuthManagerException.html</loc>
 </url>
 </urlset>
