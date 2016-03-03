@@ -5,15 +5,15 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Digest;
+namespace Chippyash\Authentication\Manager\Digest;
 
-use chippyash\Authentication\Manager\Digest\AbstractDigestCollection;
-use chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
-use chippyash\Authentication\Manager\Traits\RealmHandler;
-use chippyash\Authentication\Manager\Exceptions\AuthManagerException;
-use chippyash\Type\String\StringType;
-use chippyash\Type\Number\IntType;
-use chippyash\Type\BoolType;
+use Chippyash\Authentication\Manager\Digest\AbstractDigestCollection;
+use Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
+use Chippyash\Authentication\Manager\Traits\RealmHandler;
+use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
+use Chippyash\Type\String\StringType;
+use Chippyash\Type\Number\IntType;
+use Chippyash\Type\BoolType;
 
 /**
  * A collection of Basic Digests

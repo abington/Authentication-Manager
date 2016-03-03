@@ -2,11 +2,11 @@
 
 namespace chippyash\Test\Authentication\Manager;
 
-use chippyash\Authentication\Manager\DigestManager;
-use chippyash\Authentication\Manager\Encoder\BasicEncoder;
-use chippyash\Authentication\Manager\Digest\BasicDigestCollection;
-use chippyash\Type\String\StringType;
-use chippyash\Type\Number\IntType;
+use Chippyash\Authentication\Manager\DigestManager;
+use Chippyash\Authentication\Manager\Encoder\BasicEncoder;
+use Chippyash\Authentication\Manager\Digest\BasicDigestCollection;
+use Chippyash\Type\String\StringType;
+use Chippyash\Type\Number\IntType;
 use org\bovigo\vfs\vfsStream;
 
 /**
@@ -58,7 +58,7 @@ class DigestManagerTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage Uid: foo already exists
      */
     public function testCreatingAnExistingDigestEntryThrowsException() {
@@ -74,7 +74,7 @@ class DigestManagerTest extends \PHPUnit_Framework_TestCase {
     }
     
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage Uid: foo does not exist
      */
     public function testReadingANonExistentEntryThrowsException()
@@ -91,7 +91,7 @@ class DigestManagerTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage Uid: foo does not exist
      */
     public function testCannotUpdateNonExistentEntry() {
@@ -119,7 +119,7 @@ class DigestManagerTest extends \PHPUnit_Framework_TestCase {
     }
     
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage Uid: foo does not exist
      */
     public function testDeletingNonExistentEntryThrowsException()

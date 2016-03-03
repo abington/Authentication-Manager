@@ -5,11 +5,11 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Encoder;
+namespace Chippyash\Authentication\Manager\Encoder;
 
-use chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
-use chippyash\Authentication\Manager\Traits\RealmHandler;
-use chippyash\Type\String\StringType;
+use Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
+use Chippyash\Authentication\Manager\Traits\RealmHandler;
+use Chippyash\Type\String\StringType;
 
 /**
  * Encoding for Basic Digest

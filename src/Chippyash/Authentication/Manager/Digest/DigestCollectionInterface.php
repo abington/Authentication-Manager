@@ -5,10 +5,10 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Digest;
+namespace Chippyash\Authentication\Manager\Digest;
 
-use chippyash\Type\String\StringType;
-use chippyash\Type\Number\IntType;
+use Chippyash\Type\String\StringType;
+use Chippyash\Type\Number\IntType;
 
 /**
  * Interface for a Digest Collection
@@ -27,14 +27,14 @@ interface DigestCollectionInterface
     /**
      * Read the digest into the collection from file
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     public function read();
     
     /**
      * Write the collection to file
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     public function write();
     
@@ -44,7 +44,7 @@ interface DigestCollectionInterface
      * @param StringType $uid user id
      * @param StringType $pwd password
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     public function add(StringType $uid, StringType $pwd);
     
@@ -62,7 +62,7 @@ interface DigestCollectionInterface
      * 
      * @param IntType $index
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     public function del(IntType $index);
     

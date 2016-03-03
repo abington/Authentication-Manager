@@ -5,9 +5,9 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager;
+namespace Chippyash\Authentication\Manager;
 
-use chippyash\Type\String\StringType;
+use Chippyash\Type\String\StringType;
 
 /**
  * Interface for an authentication manager

@@ -32,10 +32,10 @@ Symfony DI container definition.
 #### Construction
 
 <pre>
-    use chippyash\Authentication\Manager\DigestManager;
-    use chippyash\Authentication\Manager\Encoder\BasicEncoder;
-    use chippyash\Authentication\Manager\Digest\BasicDigestCollection;
-    use chippyash\Type\String\StringType;
+    use Chippyash\Authentication\Manager\DigestManager;
+    use Chippyash\Authentication\Manager\Encoder\BasicEncoder;
+    use Chippyash\Authentication\Manager\Digest\BasicDigestCollection;
+    use Chippyash\Type\String\StringType;
 
     $realm = new StringType('realm');
     $digestFileName = new StringType('/path/to/my/file');
@@ -51,7 +51,7 @@ Symfony DI container definition.
 
 #### Adding new manager types
 
-Implement the chippyash\Authentication\Manager\ManagerInterface to create new types of Authentication Managers.
+Implement the Chippyash\Authentication\Manager\ManagerInterface to create new types of Authentication Managers.
 
 ### Changing the library
 
@@ -80,7 +80,7 @@ Install [Composer](https://getcomposer.org/)
 #### For production
 
 <pre>
-    "chippyash/authentication-manager": "~1.0"
+    "chippyash/authentication-manager": "~2.0"
 </pre>
 
 to your composer.json "requires" section
@@ -92,7 +92,7 @@ Clone this repo, and then run Composer in local repo root to pull in dependencie
 <pre>
     git clone git@github.com:chippyash/Authentication-Manager.git AuthMan
     cd AuthMan
-    composer install --dev
+    composer install
 </pre>
 
 To run the tests:
@@ -110,6 +110,16 @@ installed you can rebuild the Test Contract by running build.sh on \*nix systems
 
 Check out the other packages at [my blog site](http://the-matrix.github.io/packages/) for more PHP stuff;
 
+## License
+
+This software library is released under the [GNU GPL V3 or later license](http://www.gnu.org/copyleft/gpl.html)
+
+This software library is Copyright (c) 2014-2016, Ashley Kitson, UK
+
+A commercial license is available for this software library, please contact the author. 
+It is normally free to deserving causes, but gets you around the limitation of the GPL
+license, which does not allow unrestricted inclusion of this code in commercial works.
+
 ## History
 
 V0...  pre releases
@@ -121,3 +131,5 @@ V1.0.1 Amends for CI
 V1.0.2 Typos in dic example
 
 V1.0.3 Self initialise the manager
+
+V2.0.0 BC Break: change namespace from chippyash\Authentication to Chippyash\Authentication

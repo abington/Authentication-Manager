@@ -5,10 +5,10 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Traits;
+namespace Chippyash\Authentication\Manager\Traits;
 
-use chippyash\Authentication\Manager\Exceptions\AuthManagerException;
-use chippyash\Type\String\StringType;
+use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
+use Chippyash\Type\String\StringType;
 
 /**
  * Setter and Getter for a Realm

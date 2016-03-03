@@ -5,9 +5,9 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Encoder;
+namespace Chippyash\Authentication\Manager\Encoder;
 
-use chippyash\Type\String\StringType;
+use Chippyash\Type\String\StringType;
 
 /**
  * Interface for a Digest Encoder

@@ -5,14 +5,14 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Digest;
+namespace Chippyash\Authentication\Manager\Digest;
 
-use chippyash\Authentication\Manager\Digest\DigestCollectionInterface;
-use chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
-use chippyash\Authentication\Manager\Exceptions\AuthManagerException;
-use chippyash\Type\String\StringType;
-use chippyash\Type\Number\IntType;
-use chippyash\Type\BoolType;
+use Chippyash\Authentication\Manager\Digest\DigestCollectionInterface;
+use Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
+use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
+use Chippyash\Type\String\StringType;
+use Chippyash\Type\Number\IntType;
+use Chippyash\Type\BoolType;
 
 /**
  * A collection of Digests
@@ -38,7 +38,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
     
     /**
      * Digest encoder
-     * @var chippyash\Authentication\Manager\Encoder\DigestEncoderInterface
+     * @var Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface
      */
     protected $encoder;
     
@@ -98,7 +98,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @return array Digest item
      * 
-     * @throws chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      */
     public function get(IntType $index)
     {
@@ -114,7 +114,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @param IntType $index
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     public function del(IntType $index)
     {
@@ -133,21 +133,21 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @param StringType $uid user id
      * 
-     * @return chippyash\Type\Number\IntType|false
+     * @return Chippyash\Type\Number\IntType|false
      */
     abstract public function findByUid(StringType $uid);
     
     /**
      * Read the digest into the collection from file
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     abstract public function read();
     
     /**
      * Write the collection to file
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     abstract public function write();
     
@@ -157,7 +157,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * @param StringType $uid user id
      * @param StringType $pwd password
      * 
-     * @return chippyash\Type\BoolType true on success else false
+     * @return Chippyash\Type\BoolType true on success else false
      */
     abstract public function add(StringType $uid, StringType $pwd);
     

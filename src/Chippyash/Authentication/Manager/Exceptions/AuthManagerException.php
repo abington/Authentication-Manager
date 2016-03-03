@@ -5,7 +5,7 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager\Exceptions;
+namespace Chippyash\Authentication\Manager\Exceptions;
 
 /**
  * Exception thrown by AuthenticationManager

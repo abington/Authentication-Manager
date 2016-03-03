@@ -2,10 +2,10 @@
 
 namespace chippyash\Test\Authentication\Manager\Digest;
 
-use chippyash\Authentication\Manager\Digest\BasicDigestCollection;
-use chippyash\Authentication\Manager\Encoder\BasicEncoder;
-use chippyash\Type\String\StringType;
-use chippyash\Type\Number\IntType;
+use Chippyash\Authentication\Manager\Digest\BasicDigestCollection;
+use Chippyash\Authentication\Manager\Encoder\BasicEncoder;
+use Chippyash\Type\String\StringType;
+use Chippyash\Type\Number\IntType;
 use org\bovigo\vfs\vfsStream;
 
 /**
@@ -88,7 +88,7 @@ class BasicDigestCollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage No digest at index 100
      */
     public function testGetDigestEntryWillThrowExceptionIfNotExists()
@@ -122,7 +122,7 @@ class BasicDigestCollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage Digest entry (0) does not exist
      */
     public function testRetrieveAsStringWillThrowExceptionIfEntryDoesNotExist()
@@ -144,7 +144,7 @@ class BasicDigestCollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @expectedException Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      * @expectedExceptionMessage No Realm set
      */
     public function testCannotFindByUidIfRealmIsNotSetAndWillThrowException()

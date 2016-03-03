@@ -5,12 +5,12 @@
  * @copyright Ashley Kitson, UK, 2014
  * @license GPL 3.0+
  */
-namespace chippyash\Authentication\Manager;
+namespace Chippyash\Authentication\Manager;
 
-use chippyash\Authentication\Manager\ManagerInterface;
-use chippyash\Authentication\Manager\Exceptions\AuthManagerException;
-use chippyash\Authentication\Manager\Digest\DigestCollectionInterface;
-use chippyash\Type\String\StringType;
+use Chippyash\Authentication\Manager\ManagerInterface;
+use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
+use Chippyash\Authentication\Manager\Digest\DigestCollectionInterface;
+use Chippyash\Type\String\StringType;
 
 /**
  * Manage a Digest file
@@ -27,7 +27,7 @@ class DigestManager implements ManagerInterface
 
     /**
      * Digest collection
-     * @var chippyash\Authentication\Manager\Digest\DigestCollectionInterface
+     * @var Chippyash\Authentication\Manager\Digest\DigestCollectionInterface
      */
     protected $collection;
 
@@ -55,7 +55,7 @@ class DigestManager implements ManagerInterface
      * @param StringType $uid
      * @param StringType $pwd
      * @return Bool True on success else false
-     * @throws chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      */
     public function create(StringType $uid, StringType $pwd)
     {
@@ -73,7 +73,7 @@ class DigestManager implements ManagerInterface
      * 
      * @return String Digest line
      * 
-     * @throws chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      */
     public function read(StringType $uid)
     {
@@ -93,7 +93,7 @@ class DigestManager implements ManagerInterface
      * 
      * @return Bool
      * 
-     * @throws chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      */
     public function update(StringType $uid, StringType $pwd)
     {
@@ -112,7 +112,7 @@ class DigestManager implements ManagerInterface
      * 
      * @return Bool true on success else false
      * 
-     * @throws chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
      */
     public function delete(StringType $uid)
     {
@@ -149,10 +149,9 @@ class DigestManager implements ManagerInterface
         return true;
     }
     
-    
     /**
      * Initialise the manager from source
-     * @return \chippyash\Authentication\Manager\DigestManager
+     * @return \Chippyash\Authentication\Manager\DigestManager
      */
     public function init()
     {
