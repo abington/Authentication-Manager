@@ -108,7 +108,7 @@ installed you can rebuild the Test Contract by running build.sh on \*nix systems
 
 ## Other stuff
 
-Check out the other packages at [my blog site](http://the-matrix.github.io/packages/) for more PHP stuff;
+Check out [ZF4 Packages](http://zf4.biz/packages?utm_source=github&utm_medium=web&utm_campaign=blinks&utm_content=slimdicexample) for more packages
 
 ## License
 
@@ -133,3 +133,5 @@ V1.0.2 Typos in dic example
 V1.0.3 Self initialise the manager
 
 V2.0.0 BC Break: change namespace from chippyash\Authentication to Chippyash\Authentication
+
+V2.0.1 Add link to packages
