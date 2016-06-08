@@ -27,7 +27,7 @@ class BasicDigestCollectionTest extends \PHPUnit_Framework_TestCase
     
     /**
      * Mock digest file
-     * @var org\bovigo\vfs\vfsStreamFile
+     * @var vfsStreamFile
      */
     protected $file;
     
@@ -64,6 +64,13 @@ class BasicDigestCollectionTest extends \PHPUnit_Framework_TestCase
         $ret = $this->object->read();
         $this->assertTrue($ret());
         $this->assertEquals(2,$this->object->count());
+    }
+
+    public function testTryingToReadANonExistentDigestFileReturnsFalse()
+    {
+        unlink($this->file->url());
+        $ret = $this->object->read();
+        $this->assertFalse($ret());
     }
 
     public function testCanWriteADigestFile()

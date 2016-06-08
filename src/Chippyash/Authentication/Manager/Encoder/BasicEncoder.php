@@ -7,7 +7,6 @@
  */
 namespace Chippyash\Authentication\Manager\Encoder;
 
-use Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
 use Chippyash\Authentication\Manager\Traits\RealmHandler;
 use Chippyash\Type\String\StringType;
 

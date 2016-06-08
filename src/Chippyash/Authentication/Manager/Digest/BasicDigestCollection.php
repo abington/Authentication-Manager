@@ -7,7 +7,6 @@
  */
 namespace Chippyash\Authentication\Manager\Digest;
 
-use Chippyash\Authentication\Manager\Digest\AbstractDigestCollection;
 use Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
 use Chippyash\Authentication\Manager\Traits\RealmHandler;
 use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
@@ -64,9 +63,9 @@ class BasicDigestCollection extends AbstractDigestCollection
         
         if ($index === false) {
             return New BoolType(false);
-        } else {
-            return new IntType($index);
         }
+
+        return new IntType($index);
     }
     
     /**

@@ -9,6 +9,7 @@ namespace Chippyash\Authentication\Manager\Traits;
 
 use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
 use Chippyash\Type\String\StringType;
+use Chippyash\Authentication\Manager\Digest\BasicDigestCollection;
 
 /**
  * Setter and Getter for a Realm

@@ -7,7 +7,6 @@
  */
 namespace Chippyash\Authentication\Manager;
 
-use Chippyash\Authentication\Manager\ManagerInterface;
 use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
 use Chippyash\Authentication\Manager\Digest\DigestCollectionInterface;
 use Chippyash\Type\String\StringType;
@@ -27,7 +26,7 @@ class DigestManager implements ManagerInterface
 
     /**
      * Digest collection
-     * @var Chippyash\Authentication\Manager\Digest\DigestCollectionInterface
+     * @var DigestCollectionInterface
      */
     protected $collection;
 
@@ -55,7 +54,7 @@ class DigestManager implements ManagerInterface
      * @param StringType $uid
      * @param StringType $pwd
      * @return Bool True on success else false
-     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws AuthManagerException
      */
     public function create(StringType $uid, StringType $pwd)
     {
@@ -73,7 +72,7 @@ class DigestManager implements ManagerInterface
      * 
      * @return String Digest line
      * 
-     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws AuthManagerException
      */
     public function read(StringType $uid)
     {
@@ -93,7 +92,7 @@ class DigestManager implements ManagerInterface
      * 
      * @return Bool
      * 
-     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws AuthManagerException
      */
     public function update(StringType $uid, StringType $pwd)
     {
@@ -112,7 +111,7 @@ class DigestManager implements ManagerInterface
      * 
      * @return Bool true on success else false
      * 
-     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws AuthManagerException
      */
     public function delete(StringType $uid)
     {
@@ -151,7 +150,7 @@ class DigestManager implements ManagerInterface
     
     /**
      * Initialise the manager from source
-     * @return \Chippyash\Authentication\Manager\DigestManager
+     * @return $this
      */
     public function init()
     {

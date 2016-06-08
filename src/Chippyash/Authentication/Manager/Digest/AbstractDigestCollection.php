@@ -7,7 +7,6 @@
  */
 namespace Chippyash\Authentication\Manager\Digest;
 
-use Chippyash\Authentication\Manager\Digest\DigestCollectionInterface;
 use Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface;
 use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
 use Chippyash\Type\String\StringType;
@@ -38,7 +37,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
     
     /**
      * Digest encoder
-     * @var Chippyash\Authentication\Manager\Encoder\DigestEncoderInterface
+     * @var DigestEncoderInterface
      */
     protected $encoder;
     
@@ -48,7 +47,13 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * @var array
      */
     protected $collection = [];
-    
+
+    /**
+     * Constructor.
+     * 
+     * @param StringType $fileName
+     * @param array $digests
+     */
     public function __construct(StringType $fileName, array $digests = [])
     {
         $this->collection = $digests;
@@ -61,7 +66,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @param IntType $options file_put_contents options
      * 
-     * @return Fluent Interface
+     * @return $this
      */
     public function setWriteOptions(IntType $options){
         $this->writeOptions = $options();
@@ -72,7 +77,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * Set the encoder
      * 
      * @param DigestEncoderInterface $encoder
-     * @return Fluent Interface
+     * @return $this
      */
     public function setEncoder(DigestEncoderInterface $encoder)
     {
@@ -98,7 +103,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @return array Digest item
      * 
-     * @throws Chippyash\Authentication\Manager\Exceptions\AuthManagerException
+     * @throws AuthManagerException
      */
     public function get(IntType $index)
     {
@@ -114,7 +119,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @param IntType $index
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     public function del(IntType $index)
     {
@@ -133,21 +138,21 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * 
      * @param StringType $uid user id
      * 
-     * @return Chippyash\Type\Number\IntType|false
+     * @return IntType|false
      */
     abstract public function findByUid(StringType $uid);
     
     /**
      * Read the digest into the collection from file
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     abstract public function read();
     
     /**
      * Write the collection to file
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     abstract public function write();
     
@@ -157,7 +162,7 @@ abstract class AbstractDigestCollection implements DigestCollectionInterface, \C
      * @param StringType $uid user id
      * @param StringType $pwd password
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     abstract public function add(StringType $uid, StringType $pwd);
     

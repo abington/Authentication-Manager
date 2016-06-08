@@ -9,6 +9,8 @@ namespace Chippyash\Authentication\Manager\Digest;
 
 use Chippyash\Type\String\StringType;
 use Chippyash\Type\Number\IntType;
+use Chippyash\Type\BoolType;
+use Chippyash\Authentication\Manager\Exceptions\AuthManagerException;
 
 /**
  * Interface for a Digest Collection
@@ -20,21 +22,21 @@ interface DigestCollectionInterface
      * 
      * @param StringType $uid user id
      * 
-     * @return IntType|BoolType=false
+     * @return IntType|BoolType
      */
     public function findByUid(StringType $uid);
     
     /**
      * Read the digest into the collection from file
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     public function read();
     
     /**
      * Write the collection to file
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     public function write();
     
@@ -44,7 +46,7 @@ interface DigestCollectionInterface
      * @param StringType $uid user id
      * @param StringType $pwd password
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     public function add(StringType $uid, StringType $pwd);
     
@@ -62,7 +64,7 @@ interface DigestCollectionInterface
      * 
      * @param IntType $index
      * 
-     * @return Chippyash\Type\BoolType true on success else false
+     * @return BoolType true on success else false
      */
     public function del(IntType $index);
     
@@ -73,7 +75,7 @@ interface DigestCollectionInterface
      * 
      * @return StringType
      * 
-     * @throws chippyash\Authezntication\Manager\Exceptions\AuthManagerException
+     * @throws AuthManagerException
      */
     public function asString(IntType $index);
 }

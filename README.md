@@ -6,7 +6,8 @@
 ![PHP 5.6](https://img.shields.io/badge/PHP-5.6-blue.svg)
 ![PHP 7](https://img.shields.io/badge/PHP-7-blue.svg)
 [![Build Status](https://travis-ci.org/chippyash/Authentication-Manager.svg?branch=master)](https://travis-ci.org/chippyash/Authentication-Manager)
-[![Coverage Status](https://img.shields.io/coveralls/chippyash/Authentication-Manager.svg)](https://coveralls.io/r/chippyash/Authentication-Manager)
+[![Test Coverage](https://codeclimate.com/github/chippyash/Authentication-Manager/badges/coverage.svg)](https://codeclimate.com/github/chippyash/Authentication-Manager/coverage)
+[![Code Climate](https://codeclimate.com/github/chippyash/Authentication-Manager/badges/gpa.svg)](https://codeclimate.com/github/chippyash/Authentication-Manager)
 
 ## What?
 
@@ -138,3 +139,5 @@ V2.0.0 BC Break: change namespace from chippyash\Authentication to Chippyash\Aut
 V2.0.1 Add link to packages
 
 V2.0.2 Verify PHP7 compatibility
+
+V2.0.3 Move coverage to codeclimate
