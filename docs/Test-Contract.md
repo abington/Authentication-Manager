@@ -5,6 +5,7 @@
     
 
 *  Can read a digest file
+*  Trying to read a non existent digest file returns false
 *  Can write a digest file
 *  Can get digest entry if it exists
 *  Get digest entry will throw exception if not exists
