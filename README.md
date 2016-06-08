@@ -2,10 +2,11 @@
 
 ## Quality Assurance
 
+![PHP 5.5](https://img.shields.io/badge/PHP-5.5-blue.svg)
+![PHP 5.6](https://img.shields.io/badge/PHP-5.6-blue.svg)
+![PHP 7](https://img.shields.io/badge/PHP-7-blue.svg)
 [![Build Status](https://travis-ci.org/chippyash/Authentication-Manager.svg?branch=master)](https://travis-ci.org/chippyash/Authentication-Manager)
 [![Coverage Status](https://img.shields.io/coveralls/chippyash/Authentication-Manager.svg)](https://coveralls.io/r/chippyash/Authentication-Manager)
-
-Certified for PHP 5.5+
 
 ## What?
 
@@ -135,3 +136,5 @@ V1.0.3 Self initialise the manager
 V2.0.0 BC Break: change namespace from chippyash\Authentication to Chippyash\Authentication
 
 V2.0.1 Add link to packages
+
+V2.0.2 Verify PHP7 compatibility
