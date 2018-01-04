@@ -35,7 +35,7 @@ testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"
 
     <testsuites>
         <testsuite name="chippyash/Authentication Manager Test Suite">
-            <directory phpVersion="5.4.0" phpVersionOperator=">=">./test/src/</directory>
+            <directory phpVersion="5.5.0" phpVersionOperator=">=">./test/src/</directory>
         </testsuite>
     </testsuites>
     <!--
@@ -43,18 +43,26 @@ testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"
     ! blacklist and whitelist for the code coverage reporting.
     !-->
     <filter>
-        <blacklist>
-            <directory>./vendor</directory>
-            <!-- don't cover interfaces -->
-            <file>./src/chippyash/Authentication/Manager/ManagerInterface.php</file>
-            <file>./src/chippyash/Authentication/Manager/Encoder/DigestEncoderInterface.php</file>
-            <file>./src/chippyash/Authentication/Manager/Digest/DigestCollectionInterface.php</file>
-            <!-- don't cover exception - no code in it! -->
-            <file>./src/chippyash/Authentication/Manager/Exceptions/AuthManagerException.php</file>
-        </blacklist>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory>./src</directory>
+            <exclude>
+                <directory>./docs</directory>
+                <directory>./examples</directory>
+                <directory>./test</directory>
+                <directory>./vendor</directory>
+                <!-- don't cover interfaces -->
+                <file>./src/chippyash/Authentication/Manager/ManagerInterface.php</file>
+                <file>./src/chippyash/Authentication/Manager/Encoder/DigestEncoderInterface.php</file>
+                <file>./src/chippyash/Authentication/Manager/Digest/DigestCollectionInterface.php</file>
+                <!-- don't cover exception - no code in it! -->
+                <file>./src/chippyash/Authentication/Manager/Exceptions/AuthManagerException.php</file>
+            </exclude>
+        </whitelist>
     </filter>
 
-
+    <logging>
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
+    </logging>
 </phpunit>
 
 
