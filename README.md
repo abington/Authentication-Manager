@@ -9,6 +9,13 @@
 [![Test Coverage](https://codeclimate.com/github/chippyash/Authentication-Manager/badges/coverage.svg)](https://codeclimate.com/github/chippyash/Authentication-Manager/coverage)
 [![Code Climate](https://codeclimate.com/github/chippyash/Authentication-Manager/badges/gpa.svg)](https://codeclimate.com/github/chippyash/Authentication-Manager)
 
+### End of life notice
+
+In March 2018, developer support will be withdrawn from this library for PHP <5.6. Older
+versions of PHP are now in such little use that the added effort of maintaining 
+compatibility is not effort effective.  See [PHP Version Stats](https://seld.be/notes/php-versions-stats-2017-1-edition)
+ for the numbers.
+ 
 ## What?
 
 Provides base for creating managers that manage identity entries in some back
