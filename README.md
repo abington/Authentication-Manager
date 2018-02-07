@@ -150,3 +150,5 @@ V2.0.2 Verify PHP7 compatibility
 V2.0.3 Move coverage to codeclimate
 
 V2.0.4 Update travis build script
+
+V2.0.5 update composer - forced by packagist composer.json format change
